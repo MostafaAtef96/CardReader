@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://31.220.48.190:8000/ocr'
-files = {'front': open('img300f.png', 'rb'),'back': open('img300b.png', 'rb')}
+files = {'front': open('Path/To/Front/Side/Image', 'rb'),'back': open('Path/To/Back/Side/Image', 'rb')}
 result = requests.post(url, files=files)
 
 print(result.json())
